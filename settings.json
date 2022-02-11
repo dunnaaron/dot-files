@@ -1,0 +1,28 @@
+{
+	"files.autoSave": "onFocusChange",
+	"workbench.colorTheme": "Ayu Dark Bordered",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.editor.enablePreview": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.glyphMargin": false,
+	"editor.minimap.enabled": false,
+	"editor.tabSize": 2,
+	"prettier.useTabs": true,
+	"python.linting.pylintEnabled": true,
+	"python.linting.enabled": true,
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.python"
+	},
+	"bracket-pair-colorizer-2.colors": ["Coral", "MediumSpringGreen", "Magenta"],
+	"bracket-pair-colorizer-2.activeScopeCSS": [
+		"borderStyle : solid",
+		"borderWidth : 1px",
+		"borderColor : {color}",
+		"opacity: 0.5"
+	],
+	"[typescript]": {},
+	"deno.enable": true,
+	"prettier.singleQuote": true,
+	"bracket-pair-colorizer-2.depreciation-notice": false,
+	"editor.formatOnSave": true
+}
