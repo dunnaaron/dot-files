@@ -8,6 +8,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # Aliases
 alias ll="ls -alGF"
 alias srczsh="source ~/.zshrc"
+alias vim="nvim"
 
 # Git Aliases
 alias gs="git status"
