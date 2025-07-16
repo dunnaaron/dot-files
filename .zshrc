@@ -27,7 +27,7 @@ autoload -Uz vcs_info
 precmd() {
   vcs_info
   if [[ -n "$vcs_info_msg_0_" ]]; then
-    GIT_PROMPT="%F{green}(${vcs_info_msg_0_})%f "
+    GIT_PROMPT="%F{157}(${vcs_info_msg_0_})%f "
   else
     GIT_PROMPT=""
   fi
