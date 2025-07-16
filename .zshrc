@@ -34,7 +34,7 @@ precmd() {
 }
 
 # Set prompt
-PROMPT='%F{cyan}%n@%m%f %F{blue}%B%1~%b%f ${GIT_PROMPT}%F{214}❯%f '
+PROMPT='%F{212}%n@%m%f %F{blue}%B%1~%b%f ${GIT_PROMPT}%F{214}❯%f '
 
 # Format teh vcs_info_msg_0_ var
 zstyle ':vcs_info:git:*' formats '%b'
