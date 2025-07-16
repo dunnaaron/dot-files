@@ -13,6 +13,8 @@ alias vim="nvim"
 # Git Aliases
 alias gs="git status"
 alias gc="git commit -m"
+alias gan="git add . -N"
+alias gap="git add . -p"
 alias bcopy="git branch | grep '^\*' | cut -d' ' -f2 | tr -d '\n' | pbcopy"
 
 # ---- Terminal Configs ----
