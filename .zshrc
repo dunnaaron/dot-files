@@ -16,17 +16,18 @@ autoload -U colors && colors
 
 # Load version control information
 autoload -Uz vcs_info
+
 precmd() {
   vcs_info
   if [[ -n "$vcs_info_msg_0_" ]]; then
     GIT_PROMPT="%F{green}(${vcs_info_msg_0_})%f "
   else
-    GIT_PROMPT=" "
+    GIT_PROMPT=""
   fi
 }
 
 # Set prompt
-PROMPT='%F{cyan}%n@%m%f %F{blue}%B%1~%b%f ${GIT_PROMPT}%F{white}$ '
+PROMPT='%F{cyan}%n@%m%f %F{blue}%B%1~%b%f ${GIT_PROMPT}%F{214}❯%f '
 
 # Format teh vcs_info_msg_0_ var
 zstyle ':vcs_info:git:*' formats '%b'
