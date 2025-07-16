@@ -1,9 +1,13 @@
+# Enable prompt variable expansion (such as GIT_PROMPT)
+setopt PROMPT_SUBST
+
 # Enable color for ls
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Aliases
 alias ll="ls -alGF"
+alias srczsh="source ~/.zshrc"
 
 # Git Aliases
 alias gs="git status"
@@ -31,3 +35,6 @@ PROMPT='%F{cyan}%n@%m%f %F{blue}%B%1~%b%f ${GIT_PROMPT}%F{214}❯%f '
 
 # Format teh vcs_info_msg_0_ var
 zstyle ':vcs_info:git:*' formats '%b'
+
+# Source local plugins from .zsh
+source ~/.zsh/zsh-autosuggestions.zsh
