@@ -60,7 +60,11 @@ return {
 		name = "catppuccin",
 		priority = 1000,
 		lazy = false,
-		config = function() end,
+		config = function()
+			require("catppuccin").setup({
+				transparent_background = true, -- disables setting the background color.
+			})
+		end,
 	},
 
 	{
