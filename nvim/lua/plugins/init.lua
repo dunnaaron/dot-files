@@ -1,7 +1,7 @@
 -- Use this defer fn to toggle installed themes
 vim.defer_fn(function()
-	--	vim.cmd.colorscheme("catppuccin-mocha")
-	vim.cmd.colorscheme("tokyonight-storm")
+	vim.cmd.colorscheme("catppuccin-mocha")
+	--	vim.cmd.colorscheme("tokyonight-storm")
 end, 0)
 
 return {
