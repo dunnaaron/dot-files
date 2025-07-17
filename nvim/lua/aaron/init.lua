@@ -1,2 +1,3 @@
 require("aaron.remap")
-print("hello from profile")
+require("aaron.lazy")  -- assuming you saved the lazy.nvim setup there
+

@@ -1,4 +1,6 @@
-Followed Primeagen tutorial https://youtu.be/w7i4amO_zaE
+Initially started by following the Primeagen tutorial here: https://youtu.be/w7i4amO_zaE
 
-# Prereq
-Install ripgrep https://github.com/BurntSushi/ripgrep
+Found it to be pretty outdated. For instance, switched to lazy.nvim shortly after starting once I realized Packer is nearing EOL.
+
+So the foundations are in that tutorial, but I quickly veered off and have since stopped following the tutorial.
+
