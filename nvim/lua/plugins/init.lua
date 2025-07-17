@@ -1,3 +1,9 @@
+-- Use this defer fn to toggle installed themes
+vim.defer_fn(function()
+	--	vim.cmd.colorscheme("catppuccin-mocha")
+	vim.cmd.colorscheme("tokyonight-storm")
+end, 0)
+
 return {
 	{
 		"nvim-telescope/telescope.nvim",
@@ -42,16 +48,21 @@ return {
 			})
 		end,
 	},
-
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+		config = function() end,
+	},
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",
 		priority = 1000,
 		lazy = false,
-		config = function()
-			vim.cmd.colorscheme("catppuccin-mocha")
-		end,
+		config = function() end,
 	},
+
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",
