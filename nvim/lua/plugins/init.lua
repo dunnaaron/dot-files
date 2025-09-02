@@ -63,6 +63,12 @@ return {
 		config = function()
 			require("catppuccin").setup({
 				transparent_background = true, -- disables setting the background color.
+
+				custom_highlights = function(colors)
+					return {
+						LineNr = { fg = colors.overlay1, style = { "bold" } },
+					}
+				end,
 			})
 		end,
 	},
@@ -98,5 +104,11 @@ return {
 				require("conform").format({ async = true })
 			end, { desc = "Format file with Conform" })
 		end,
+	},
+	{
+		"m4xshen/hardtime.nvim",
+		lazy = false,
+		dependencies = { "MunifTanjim/nui.nvim" },
+		opts = {},
 	},
 }
